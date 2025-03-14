@@ -1,2 +1,1 @@
-# national.geographic
-nationalGeographic
+A recreation of the National Geographic landing page. 
