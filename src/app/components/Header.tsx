@@ -1,5 +1,6 @@
 'use client'
 import {useState} from "react"
+import Sidebar from "./Sidebar"
 type headerLinks = {
     title: string,
     path: string
@@ -12,11 +13,12 @@ const Header = ({links}: headerProps) => {
     // i need the props to be an array of objects. 
     return (
     <div className="full-header" 
-    style={{display: "flex"}}
+    style={{display: "flex", alignItems:"center"}}
     >
+         
         <div className="left-header"
         style = {{backgroundColor:"white", display: "flex", justifyContent:
-            "space-between", padding:"10px 24px 24px 100px", height:"80px", width:"50%",
+            "space-between", padding:"10px 24px 24px 100px", height:"80px", width:"53.83%",
             alignItems:"center", textAlign:"center"
             }} 
         >
@@ -28,6 +30,7 @@ const Header = ({links}: headerProps) => {
             >
                 {links.map(link => <a style={{}}href={link.path}>{link.title}</a>)}
             </div>
+            N
         </div>
         <div className="right-header"
         style = {{width: "50%", display:"flex", background:'linear-gradient(90deg, rgba(144,170,195,1) 0%, rgba(162,186,210,1) 0%, rgba(241,226,233,1) 100%)', 
